@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "{{cookiecutter.project_slug}}"
+version = "{{cookiecutter.initial_version}}"
+description = "{{cookiecutter.project_desc}}"
+authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/"
+homepage = "https://github.com/"
+documentation = "https://readthedocs.io"
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7"
+flake8-commas = "^2.0"
+flake8-comprehensions = "^2.2"
+flake8-debugger = "^3.1"
+flake8-docstrings = "^1.4"
+flake8-isort = "^2.7"
+flake8-mutable = "^1.2"
+flake8-todo = "^0.7.0"
+mypy = "^0.720"
+pytest = "^5.1"
+pytest-cov = "^2.7"
+rope = "^0.14.0"
+isort = {version = "^4.3",extras = ["pyproject"]}
+
+# See https://gitlab.com/pycqa/flake8-docstrings/issues/36
+pydocstyle = "~4"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

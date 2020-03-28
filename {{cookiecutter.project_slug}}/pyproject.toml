@@ -31,9 +31,6 @@ pytest-cov = "^2.7"
 rope = "^0.14.0"
 isort = {version = "^4.3",extras = ["pyproject"]}
 
-# See https://gitlab.com/pycqa/flake8-docstrings/issues/36
-pydocstyle = "~4"
-
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
